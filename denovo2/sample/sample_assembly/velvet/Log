@@ -1,0 +1,5 @@
+Fri Apr 16 13:23:39 2010
+ /share/apps/denovo2/velvet_0.7.55/velveth_de assembly/velvet 13 -fasta -shortPaired assembly/preprocessor/doubleEncoded_input.de
+Fri Apr 16 13:23:39 2010
+ /share/apps/denovo2/velvet_0.7.55/velvetg_de assembly/velvet -ins_length 1300 -ins_length_sd 400 -min_contig_lgth 50 -exp_cov 6 -cov_cutoff 3 -min_pair_count 5 -read_trkg yes
+Final graph has 107 nodes and n50 of 5586, max 18789, total 40189, using 6065/8998 reads

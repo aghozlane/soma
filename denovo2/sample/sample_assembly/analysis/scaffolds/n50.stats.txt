@@ -1,0 +1,13 @@
+
+perc A               : 10
+perc C               :  8
+perc G               :  9
+perc T               :  7
+perc N               : 63
+Sum contig length    : 40292
+Num contigs          : 73
+Mean contig length   : 551
+Median contig length : 66
+N50 value            : 5598
+Max                  : 18801
+
