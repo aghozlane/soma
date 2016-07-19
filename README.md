@@ -26,31 +26,36 @@ mv ./soma/MetaGeneMark/mgm/gm_key  $HOME/.gm_key
 #################
 
 # Download and move data.tar.gz in soma directory, then :
+```
+wget http://mgps.eu/ibs-tools/data.tar.gz
 tar -zxf data.tar.gz
 mv data soma/
 cd soma/data/
 ./install_databank.sh
+```
 
 ############
 # Run SOMA #
 ############
 
 # Help
+```
 ./soma/soma.sh
 Use '--help' to print detailed descriptions of command line arguments
+```
 
 # Usage :
 # case 1 - Assembly: 
-./soma.sh -i <read.csfasta> -o </path/to/result/directory/> --assembly (--hsize 23 -r 20000000 for 35nt reads or --hsize 25 -r 100000000 for 50nt reads --abundance_filtering --lowerCount 3 --occurence 3 --kmer 15  for low quality sequencing)
+`./soma.sh -i <read.csfasta> -o </path/to/result/directory/> --assembly (--hsize 23 -r 20000000 for 35nt reads or --hsize 25 -r 100000000 for 50nt reads --abundance_filtering --lowerCount 3 --occurence 3 --kmer 15  for low quality sequencing)`
 
 # case 2 - Taxonomic annotation/MOTU: 
-./soma.sh -g <gene.fasta> -o </path/to/result/directory/> --tax_annotation
+`./soma.sh -g <gene.fasta> -o </path/to/result/directory/> --tax_annotation`
 
 # case 3 - Functional annotation:
-./soma.sh -p <protein.fasta> -o </path/to/result/directory/> --func_annotation
+`./soma.sh -p <protein.fasta> -o </path/to/result/directory/> --func_annotation`
 
 # all :
-./soma.sh -i <read.csfasta> -q <rea.quality> -o </path/to/result/directory/>
+`./soma.sh -i <read.csfasta> -q <rea.quality> -o </path/to/result/directory/>`
 
 ##############################
 # Particular case : Taxonomy #
@@ -60,9 +65,10 @@ Python package generated for get_taxonomy might not fit to every system
 configuration.
 To test it, try :
 
-./soma/get_taxonomy/get_taxonomy -h
+`./soma/get_taxonomy/get_taxonomy -h`
 
 # Result :
+```
 usage: ./soma/get_taxonomy -h (see also ftp://ftp.ncbi.nih.gov/pub/taxonomy/)
 
 Get NCBI taxonomy with lineage.
@@ -77,10 +83,12 @@ optional arguments:
                         ['superkingdom','kingdom',
                         'phylum','class','order','family','genus','species'])
   -o TAXONOMY_FILE      Output taxonomy_file
-
+```
 
 # If failed, run as root :
-pip install cogent
+`pip install cogent`
 # In soma.sh, make the following changes (line 224-225) :
-gettaxonomy="$SCRIPTPATH/get_taxonomy/get_taxonomy.py"
-#gettaxonomy="$SCRIPTPATH/get_taxonomy/get_taxonomy"
+`gettaxonomy="$SCRIPTPATH/get_taxonomy/get_taxonomy.py"`
+
+# Example dataset
+One example dataset is available [here](http://mgps.eu/ibs-tools/example_soma.tar.gz)
