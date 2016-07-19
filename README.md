@@ -1,12 +1,9 @@
-# ------------------------------------------------------------------
-# SOMA version 0.0
-# Authors: Amine Ghozlane (amine.ghozlane@jouy.inra.fr)
-#          Mathieu Almeida
-#          Florian Plaza Oñate
-# Special thanks : Anne-Sophie Alvarez
-# Title:  Assemble_SOLiD_lite-metagenome
-# Description : Assembly pipeline for SOLID reads with annotation
-# ------------------------------------------------------------------
+# SOMA : Assemble_SOLiD_lite-metagenome
+Authors: Amine Ghozlane (amine.ghozlane@pasteur.fr)
+         Mathieu Almeida
+         Florian Plaza Oñate
+Special thanks : Anne-Sophie Alvarez
+
 
 #########################
 # Activate Metagenemark #
